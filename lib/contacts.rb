@@ -13,8 +13,7 @@
   # }
   
 def remove_strawberry(contacts)
-  contacts["Freddy Mercury"][]
-      end
-    end  
+  contacts.each do |person, contact_details_hash|
+    binding.pry
   end
 end
