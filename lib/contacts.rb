@@ -1,5 +1,3 @@
-require 'pry'
-
   # This is the array we will be passing into the remove_strawberry method
   # contacts = {
   #   "Jon Snow" => {
@@ -15,5 +13,13 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-
+  contacts.each do |person, data|
+    data.each do |attribute, value|
+      if attribute = :favorite_ice_cream_flavors
+        value.each do |flavor|
+          puts favorite_ice_cream_flavors.shift("strawberry")
+        end
+      end
+    end
+  end
 end
