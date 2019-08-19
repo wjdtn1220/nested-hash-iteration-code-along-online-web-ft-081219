@@ -16,9 +16,8 @@ def remove_strawberry(contacts)
   contacts.each do |person, data|
     data.each do |attribute, value|
       if attribute = :favorite_ice_cream_flavors
-        favorite_ice_cream_flavors.shift("strawberry")
-        end
+        attribute.shift("strawberry")
       end
-    end
+    end  
   end
 end
